@@ -447,6 +447,34 @@ footer {
     }
 }
 
+@media (max-width: 780px) {
+  .nav-inner {
+    flex-direction: column;      /* stack items vertically */
+    gap: 12px;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;      /* logo + title stacked */
+    gap: 6px;
+  }
+
+  .brand .logo2 {
+    width: 60px;                 /* shrink ACM logo */
+    height: 34px;
+  }
+
+  .brand .logo {
+    width: 32px;                 /* shrink TIU logo */
+    height: 32px;
+  }
+
+  .btn {
+    width: 100%;                 /* register button full width */
+    text-align: center;
+  }
+}
+
 
 
 /* Animations */
