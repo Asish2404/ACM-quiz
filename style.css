@@ -430,6 +430,31 @@ footer {
     box-shadow: 0 0 20px #3aa0ffcc;
     transform: translateY(-2px);
 }
+.position a {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* keeps same color as parent */
+}
+
+.position p:hover {
+  color: #3aa0ff;
+  cursor: pointer;
+}
+
+.position a {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #222;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.position a:hover {
+  background: #3aa0ff;
+  color: #000;
+}
+
 
 @media (max-width:900px) {
     .hero-grid {
