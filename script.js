@@ -1,4 +1,4 @@
-const EVENT_ISO = '2025-09-19T15:00:00+05:30';
+const EVENT_ISO = '2025-09-18T15:00:00+05:30';
 const eventDate = new Date(EVENT_ISO);
 document.getElementById('eventDateText').textContent =
     eventDate.toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' });
