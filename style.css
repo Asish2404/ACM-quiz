@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -36,6 +41,16 @@ header.nav {
     background: #0b1220dd;
     border-bottom: 1px solid #2a3857;
     animation: slideDown 1s ease;
+}
+
+.nav-tiu{
+    margin-right: 160px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.nav-tiu:hover{
+    color: #3aa0ff55;
 }
 
 .nav-inner {
@@ -116,10 +131,14 @@ header.nav {
 .nav-links {
     display: flex;
     gap: 18px;
-    font-weight: 500;
+    font-weight: 900;
+}
+.nav-links a:hover{
+    color: #3aa0ff55;
 }
 
 .btn {
+    margin-left: 12px;
     padding: 10px 16px;
     border-radius: 14px;
     background: linear-gradient(135deg, var(--brand), var(--brand-2));
@@ -183,6 +202,7 @@ header.nav {
 .title {
     font-size: clamp(28px, 5vw, 48px);
     margin: 12px 0 10px;
+    text-align: center; 
 }
 
 .lead {
@@ -201,10 +221,12 @@ header.nav {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(38, 59, 99, 0.6);
 }
+
 
 .card h3 {
     gap: 7px;
@@ -220,7 +242,7 @@ header.nav {
 
 .card img {
     height: 40px;
-    ;
+     display: block;
 }
 
 .level {
@@ -405,8 +427,7 @@ h2 {
 }
 
 .card video {
-    width: 100%;
-    max-width: 600px;
+   max-width: 100%;
     height: auto;
     border-radius: 16px;
     border: 2px solid #3aa0ff;
@@ -414,7 +435,9 @@ h2 {
         0 0 18px rgba(58, 160, 255, 0.25);
     display: block;
     margin: 0 auto 20px;
+     display: block;
 }
+
 
 
 .grid-3 {
@@ -489,25 +512,40 @@ footer {
     color: #000;
 }
 
-
-@media (max-width:900px) {
+@media (max-width:1150px) {
     .hero-grid {
         grid-template-columns: 1fr;
     }
+    .nav-tiu{
+    margin-right: 100px;
+}
+}
+@media (max-width:1082px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+    .nav-tiu{
+    margin-right: 30px;
+}
 }
 
-@media (max-width:780px) {
-    .grid-3 {
+@media (max-width:1000px) {
+
+.nav-links {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 780px) {
+     .grid-3 {
         grid-template-columns: 1fr;
     }
 
     .nav-links {
         display: none;
     }
-}
-
-
-@media (max-width: 780px) {
     .header-section {
         padding: 15px;
     }
@@ -544,6 +582,131 @@ footer {
         font-size: 12px;
     }
 }
+
+/*Samsumg A51*/
+@media (max-width: 500px) {
+  .hero{
+    padding-top: 15px;
+  }
+  .nav-tiu {
+    margin-left: 20px;
+    font-size: 0.7rem;
+  }
+
+  .brand .logo2 {
+    width: 37px;
+    height: 27px;
+  }
+  .brand .logo2 img{
+    height: 17px;
+  }
+
+  .brand .logo{
+    width: 37px;
+    height: 27px;
+  }
+  .brand .logo img{
+    height: 17px;
+  }
+
+  .btn {
+    padding: 6px 11px;
+    font-size: 0.66rem;
+  }
+
+  /*video card part*/
+  .card1{
+    align-items: center;
+    width: 80%;
+  }
+  .card2{
+    width: 100%;
+  }
+
+  .card video {
+    border: none;
+    box-shadow: none;
+    width: 500px;
+  }
+
+  .time{
+    align-items: center;
+    width: 80%;
+  }
+  .tiu-title{
+    width: 80%;
+  }
+  .tiu-title .title{
+    text-align: left;
+  }
+  .btn2{
+    font-size: 0.9rem;
+    padding: 9px 8px;
+  }
+
+}
+
+/*Samsumg Galaxy S8+*/
+@media (max-width: 400px) {
+
+  .nav-tiu {
+    margin-left: 7px;
+    font-size: 0.5rem;
+  }
+
+  .brand .logo2 {
+    width: 37px;
+    height: 27px;
+  }
+  .brand .logo2 img{
+    height: 17px;
+  }
+
+  .brand .logo{
+    width: 37px;
+    height: 27px;
+  }
+  .brand .logo img{
+    height: 17px;
+  }
+
+  .btn {
+    padding: 6px 11px;
+    font-size: 0.66rem;
+  }
+  .card1{
+    align-items: center;
+    width: 70%;
+  }
+  .card2{
+    width: 100%;
+  }
+
+  .card video {
+    border: none;
+    box-shadow: none;
+    width: 500px;
+  }
+
+  .time{
+    align-items: center;
+    width: 70%;
+  }
+  .tiu-title{
+    width: 70%;
+  }
+  .tiu-title .title{
+    text-align: left;
+  }
+  .btn2{
+    font-size: 0.9rem;
+    padding: 9px 8px;
+  }
+
+}
+
+
+
 
 @keyframes gradientBG {
     0% {
